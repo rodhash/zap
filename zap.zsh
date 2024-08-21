@@ -128,7 +128,7 @@ function _zap_update() {
         _check "$ZAP_PLUGIN_DIR/$_plugin"
         printf '%4s 🔌 %s (%b)\n' $ZAP_INSTALLED_PLUGINS[(Ie)$_plugin] $_plugin $_status
     done
-    echo -n "\n  🔌 Plugin Number | (0) ⚡ Zap Itself | (a) All Plugins | (⏎) Abort: " && read _plugin
+    echo -n "\n  🔌 Plugin Number | (0) ⚡ Zap Itself | (a) All Plugins | (⏎ ) Abort: " && read _plugin
     case $_plugin in
         [[:digit:]]*)
             [[ $_plugin -gt ${#ZAP_INSTALLED_PLUGINS[@]} ]] && { echo "❌ Invalid option" && return 1 }
