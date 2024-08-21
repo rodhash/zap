@@ -113,7 +113,7 @@ function _zap_update() {
             ahead)
                 _status='\033[1;34mLocal ahead remote\033[0m' ;;
             behind)
-                _status='\033[1;33mOut of date\033[0m' ;;
+                _status='\033[1;91mOut of date\033[0m' ;;
             'up to date')
                 _status='\033[1;32mUp to date\033[0m' ;;
             *)
